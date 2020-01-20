@@ -1,0 +1,42 @@
+.Title {
+	text-align: center;
+	font-size: 3rem;
+}
+
+.Dnd-Wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.Draggable {
+	background-color: yellow;
+	width: 450px;
+	margin: 10px;
+	padding: 30px;
+}
+
+.DropZone-Wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.DropZone {
+	margin-top: 100px;
+	border: 1px solid red;
+	width: 600px;
+	padding: 10px;
+}
+
+.Is-Dragging {
+	opacity: 0.5;
+}
+
+.Draggable-Leave {
+	display: none;
+}
+
+.State-Dashboard {
+	text-align: center;
+	font-size: 2rem;
+}
