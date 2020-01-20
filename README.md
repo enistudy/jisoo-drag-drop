@@ -2,6 +2,8 @@
 
 ## [👏 라이브러리 구현 repository 바로가기](https://github.com/YukJiSoo/react-useful-dnd)
 
+<br>
+
 ## ❓ npm 등록?
 
 npm에 등록하기위해 어떤 것을 준비해야 하는지 조사해보았습니다. 저는 우선 폴더구조를 어떤식으로 구성해야 하는지부터 정하고 시작했습니다. 서칭을 통해 보통많이 사용하는 것 같은 구조로 구성하여 진행했습니다.
@@ -75,6 +77,8 @@ output의 libraryTarget은 해당 모듈이 어떤방식으로 로드될지를 �
 - https://ui.toast.com/weekly-pick/ko_20170818/
 - https://webpack.js.org/guides/author-libraries/#author-a-library
 
+<br>
+
 ## ❓ drag & drop API
 
 drag & drop에 대한 정보는 MDN문서가 가장 정리가 잘 되어 있었습니다.
@@ -87,6 +91,8 @@ drag & drop에 대한 정보는 MDN문서가 가장 정리가 잘 되어 있었�
 
 이를 react에서 편하게 사용하기위해 hooks로 제공하기로 했습니다. 두 hooks에서는 모두 ref를 반환하며 원하는 element에 ref props를 부여하여 직접 event를 등록해주었습니다.
 
+<br>
+
 ### `🎇 useDraggable`
 
 component가 drag 가능한 요소가 되도록 해주는 hooks입니다.
@@ -95,6 +101,8 @@ component가 drag 가능한 요소가 되도록 해주는 hooks입니다.
 
 해당 컴포넌트를 드래그 시작하면 `Is-Dragging`이라는 클래스이름을 부여하고 드래그가 끝나면 해당 클래스이름을 제거해주는 단순한 역할을 합니다.
 
+<br>
+
 ### `🌁 useDroppable`
 
 component가 drop 가능한 요소가 되도록 해주는 hooks입니다.
@@ -102,6 +110,8 @@ component가 drop 가능한 요소가 되도록 해주는 hooks입니다.
 `dragover`, `dragleave`, `dragend` 이벤트에 리스너를 등록해주었습니다.
 
 해당 컴포넌트에 드래그 중인 요소가 지나가면 위치를 계산하여 dropzone에 추가시켜줍니다. dropzone영역을 빠져나가면 없애주도록 합니다. 이때, `display: none` 속성을 부여하여 단순히 화면에 보이지 않도록 해주었기 때문에 드래그가 끝난 시점에서 화면에 보이지는 않지만 dom트리에 존재하는 모든 element를 없애주도록했습니다.
+
+<br>
 
 ### 🙉 상태관리
 
@@ -150,6 +160,8 @@ export default DropZone;
 ```
 
 추후에, 내부요소의 위치변경 / 삭제 / 추가에 따른 콜백을 hooks의 인자로 넘겨주어 세부적인 조작이 가능하도록 하면 좋을 것으로 생각합니다.
+
+<br>
 
 ## ❓ 어려웠던 점
 
