@@ -1,6 +1,6 @@
 # 🌈 drag & drop 모듈 NPM에 등록해보기!!
 
-## [👏 라이브러리 구현 repository 바로가기](https://github.com/YukJiSoo/react-useful-dnd)
+### [👏 라이브러리 구현 repository 바로가기](https://github.com/YukJiSoo/react-useful-dnd)
 
 <br>
 
@@ -66,7 +66,7 @@ module.exports = {
 
 눈여겨 보아할 부분은 output과 externals입니다.
 
-externals 속성은 번들링시 해당 파일을 포함시키지 않도록 합니다. react를 명시해주어 번들파일의 사이즈가 커지는 것을 방지했습니다.
+externals 속성은 번들링시 해당 파일을 포함시키지 않도록 합니다. react를 명시해주어 번들파일의 사이즈가 커지는 것을 방지했습니다.
 output의 libraryTarget은 해당 모듈이 어떤방식으로 로드될지를 결정하는 속성입니다. umd로 설정해주어 script뿐아니라 amd, commonjs 방식으로 로드가 가능합니다. library속성으로 전역 범위에 할당될 변수 또는 네임스페이스명을 설정할 수 있습니다.
 
 아래 사이트를 참고하여 작성했습니다.
